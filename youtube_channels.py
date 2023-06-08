@@ -9,8 +9,9 @@ import time
 def channel_url():
     driver_path = "chromedriver"
     driver = webdriver.Chrome(service=Service(driver_path))
+    # Channel url we want to scrape
     URL = "https://www.youtube.com/@MrBeast/videos"
-
+    
     driver.get(URL)
 
     WebDriverWait(driver, 20).until(
