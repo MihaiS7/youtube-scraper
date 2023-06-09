@@ -20,7 +20,7 @@ def channel_url():
     accept_button = driver.find_element(By.XPATH, '//button[@aria-label="Accept all"]')
     accept_button.click()
 
-    time.sleep(6)
+    time.sleep(4)
 
     while True:
         last_height = driver.execute_script("return document.documentElement.scrollHeight")
