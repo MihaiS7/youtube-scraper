@@ -13,7 +13,7 @@ def channel_url():
     URL = "https://www.youtube.com/@MrBeast/videos"
     
     driver.get(URL)
-
+    # Accepting cookies
     WebDriverWait(driver, 20).until(
         EC.presence_of_element_located((By.XPATH, '//button[@aria-label="Accept all"]'))
     )
